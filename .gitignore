@@ -1,12 +1,80 @@
-Packages
-.build
-xcuserdata
+# --- Swift Package Manager ---
+.build/
+.swiftpm/
+
+# --- Xcode ---
+xcuserdata/
 *.xcodeproj
+*.xcworkspace
 DerivedData/
+*.xcuserstate
+
+# --- macOS system files ---
 .DS_Store
-db.sqlite
-.swiftpm
+.Trashes
+
+# --- Logs ---
+*.log
+crash.log
+error.log
+npm-debug.log*
+
+# --- Env files ---
 .env
 .env.*
-! .env.example
-.vscode
+!.env.example
+*.local
+
+# --- Editor-specific ignores ---
+# VSCode settings
+.vscode/
+
+# Sublime Text
+*.sublime*
+
+# JetBrains (IntelliJ IDEA, AppCode, etc.)
+.idea/
+*.iml
+
+# --- Binary files ---
+*.exe
+*.bin
+*.dll
+*.dylib
+*.so
+*.o
+*.a
+
+# --- Temporary files ---
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# --- Git ---
+# Ignore local Git config
+.git/config
+
+# --- Cache files ---
+*.cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- SQLite (if using SQLite for development) ---
+db.sqlite
+
+# --- Others ---
+# Optional: ignore backups
+*.bak
+*.old
+*.save
+*.orig
+
+# Ignore SwiftDoc and SwiftLint output
+*.swiftdoc
+*.swiftlint
+
+# Ignore build files and artifacts from CI/CD pipelines (optional)
+# .ci/
+
