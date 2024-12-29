@@ -1,10 +1,3 @@
-//
-//  CompanyController.swift
-//  VerhuisVriend
-//
-//  Created by Felipe on 12/10/24.
-//
-
 import Vapor
 
 struct CompanyController: RouteCollection {
@@ -12,6 +5,11 @@ struct CompanyController: RouteCollection {
         let companies = routes.grouped("companies")
         companies.get(use: index)
         companies.post(use: create)
+        companies.group(":companyID") { company in
+            company.get(use: show)
+            company.put(use: update)
+            company.delete(use: delete)
+        }
     }
 
     func index(req: Request) throws -> EventLoopFuture<[CompanyDTO]> {
@@ -28,5 +26,36 @@ struct CompanyController: RouteCollection {
         return newCompany.save(on: req.db).map {
             CompanyDTO(company: newCompany)
         }
+    }
+
+    func show(req: Request) throws -> EventLoopFuture<CompanyDTO> {
+        return Company.find(req.parameters.get("companyID"), on: req.db)
+            .unwrap(or: Abort(.notFound))
+            .map { CompanyDTO(company: $0) }
+    }
+
+    func update(req: Request) throws -> EventLoopFuture<CompanyDTO> {
+        let updatedCompanyDTO = try req.content.decode(CompanyDTO.self)
+        
+        return Company.find(req.parameters.get("companyID"), on: req.db)
+            .unwrap(or: Abort(.notFound))
+            .flatMap { company in
+                company.name = updatedCompanyDTO.name
+                company.email = updatedCompanyDTO.email
+                company.phone = updatedCompanyDTO.phone
+                company.address = updatedCompanyDTO.address
+                
+                return company.save(on: req.db).map {
+                    CompanyDTO(company: company)
+                }
+            }
+    }
+
+    func delete(req: Request) throws -> EventLoopFuture<HTTPStatus> {
+        return Company.find(req.parameters.get("companyID"), on: req.db)
+            .unwrap(or: Abort(.notFound))
+            .flatMap { company in
+                company.delete(on: req.db).transform(to: .noContent)
+            }
     }
 }

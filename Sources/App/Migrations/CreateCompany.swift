@@ -12,8 +12,8 @@ struct CreateCompany: Migration {
         return database.schema("companies")
             .id()
             .field("name", .string, .required)
-            .field("contact_email", .string, .required)
-            .field("phone_number", .string)
+            .field("email", .string, .required)
+            .field("phone", .string)
             .field("address", .string)
             .create()
     }
