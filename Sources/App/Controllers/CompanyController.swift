@@ -21,7 +21,7 @@ struct CompanyController: RouteCollection {
     func create(req: Request) throws -> EventLoopFuture<CompanyDTO> {
         let companyDTO = try req.content.decode(CompanyDTO.self)
         
-        let newCompany = Company(name: companyDTO.name, email: companyDTO.email, phone: companyDTO.phone, address: companyDTO.address)
+        let newCompany = Company(name: companyDTO.name, email: companyDTO.email, phone: companyDTO.phone, address: companyDTO.address, serviceArea: companyDTO.serviceArea, servicesOffered: companyDTO.servicesOffered, languagesSpoken: companyDTO.languagesSpoken)
 
         return newCompany.save(on: req.db).map {
             CompanyDTO(company: newCompany)
@@ -44,6 +44,9 @@ struct CompanyController: RouteCollection {
                 company.email = updatedCompanyDTO.email
                 company.phone = updatedCompanyDTO.phone
                 company.address = updatedCompanyDTO.address
+                company.serviceArea = updatedCompanyDTO.serviceArea
+                company.servicesOffered = updatedCompanyDTO.servicesOffered
+                company.languagesSpoken = updatedCompanyDTO.languagesSpoken
                 
                 return company.save(on: req.db).map {
                     CompanyDTO(company: company)

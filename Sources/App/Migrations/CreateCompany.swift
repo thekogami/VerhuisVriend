@@ -1,10 +1,3 @@
-//
-//  CreateCompany.swift
-//  VerhuisVriend
-//
-//  Created by Felipe on 12/10/24.
-//
-
 import Fluent
 
 struct CreateCompany: Migration {
@@ -15,6 +8,9 @@ struct CreateCompany: Migration {
             .field("email", .string, .required)
             .field("phone", .string)
             .field("address", .string)
+            .field("service_area", .string)
+            .field("services_offered", .string)
+            .field("languages_spoken", .string)
             .create()
     }
 
