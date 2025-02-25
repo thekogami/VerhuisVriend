@@ -1,10 +1,3 @@
-//
-//  CreateUser.swift
-//  VerhuisVriend
-//
-//  Created by Felipe on 12/10/24.
-//
-
 import Fluent
 
 struct CreateUser: Migration {
@@ -13,6 +6,12 @@ struct CreateUser: Migration {
             .id()
             .field("name", .string, .required)
             .field("email", .string, .required)
+            .field("password", .string, .required)
+            .field("status", .bool, .required, .sql(.default(true)))
+            .field("avatar", .string)
+            .field("phone", .string)
+            .field("created_at", .datetime)
+            .field("updated_at", .datetime)
             .unique(on: "email")
             .create()
     }

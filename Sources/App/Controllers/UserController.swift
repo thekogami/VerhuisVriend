@@ -20,7 +20,7 @@ struct UserController: RouteCollection {
 
     func create(req: Request) throws -> EventLoopFuture<UserDTO> {
         let userDTO = try req.content.decode(UserDTO.self)
-        let newUser = User(name: userDTO.name, email: userDTO.email)
+        let newUser = User(name: userDTO.name, email: userDTO.email, password: userDTO.password, status: userDTO.status, avatar: userDTO.avatar, phone: userDTO.phone)
 
         return newUser.save(on: req.db).map {
             UserDTO(user: newUser)
@@ -41,6 +41,10 @@ struct UserController: RouteCollection {
             .flatMap { user in
                 user.name = updatedUserDTO.name
                 user.email = updatedUserDTO.email
+                user.password = updatedUserDTO.password
+                user.status = updatedUserDTO.status
+                user.avatar = updatedUserDTO.avatar
+                user.phone = updatedUserDTO.phone
                 
                 return user.save(on: req.db).map {
                     UserDTO(user: user)
