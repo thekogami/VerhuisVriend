@@ -1,4 +1,5 @@
 import Vapor
+import Fluent
 
 struct CompanyController: RouteCollection {
     func boot(routes: RoutesBuilder) throws {
@@ -10,55 +11,100 @@ struct CompanyController: RouteCollection {
             company.put(use: update)
             company.delete(use: delete)
         }
+        
+        // Special endpoints
+        companies.get("top-rated", use: topRated)
+        companies.get("by-area", ":area", use: byServiceArea)
     }
 
-    func index(req: Request) throws -> EventLoopFuture<[CompanyDTO]> {
-        return Company.query(on: req.db).all().map { companies in
-            companies.map { CompanyDTO(company: $0) }
-        }
+    func index(req: Request) async throws -> [CompanyDTO] {
+        let companies = try await Company.query(on: req.db).all()
+        return companies.map { CompanyDTO(company: $0) }
     }
 
-    func create(req: Request) throws -> EventLoopFuture<CompanyDTO> {
+    func create(req: Request) async throws -> CompanyDTO {
         let companyDTO = try req.content.decode(CompanyDTO.self)
         
-        let newCompany = Company(name: companyDTO.name, email: companyDTO.email, phone: companyDTO.phone, address: companyDTO.address, serviceArea: companyDTO.serviceArea, servicesOffered: companyDTO.servicesOffered, languagesSpoken: companyDTO.languagesSpoken)
+        let newCompany = Company(
+            name: companyDTO.name,
+            email: companyDTO.email,
+            phone: companyDTO.phone,
+            address: companyDTO.address,
+            serviceArea: companyDTO.serviceArea,
+            servicesOffered: companyDTO.servicesOffered,
+            languagesSpoken: companyDTO.languagesSpoken,
+            rating: companyDTO.rating
+        )
 
-        return newCompany.save(on: req.db).map {
-            CompanyDTO(company: newCompany)
+        try await newCompany.save(on: req.db)
+        return CompanyDTO(company: newCompany)
+    }
+
+    func show(req: Request) async throws -> CompanyDTO {
+        guard let company = try await Company.find(
+            req.parameters.get("companyID"),
+            on: req.db
+        ) else {
+            throw Abort(.notFound)
         }
+        return CompanyDTO(company: company)
     }
 
-    func show(req: Request) throws -> EventLoopFuture<CompanyDTO> {
-        return Company.find(req.parameters.get("companyID"), on: req.db)
-            .unwrap(or: Abort(.notFound))
-            .map { CompanyDTO(company: $0) }
-    }
-
-    func update(req: Request) throws -> EventLoopFuture<CompanyDTO> {
+    func update(req: Request) async throws -> CompanyDTO {
+        guard let company = try await Company.find(
+            req.parameters.get("companyID"),
+            on: req.db
+        ) else {
+            throw Abort(.notFound)
+        }
+        
         let updatedCompanyDTO = try req.content.decode(CompanyDTO.self)
         
-        return Company.find(req.parameters.get("companyID"), on: req.db)
-            .unwrap(or: Abort(.notFound))
-            .flatMap { company in
-                company.name = updatedCompanyDTO.name
-                company.email = updatedCompanyDTO.email
-                company.phone = updatedCompanyDTO.phone
-                company.address = updatedCompanyDTO.address
-                company.serviceArea = updatedCompanyDTO.serviceArea
-                company.servicesOffered = updatedCompanyDTO.servicesOffered
-                company.languagesSpoken = updatedCompanyDTO.languagesSpoken
-                
-                return company.save(on: req.db).map {
-                    CompanyDTO(company: company)
-                }
-            }
+        company.name = updatedCompanyDTO.name
+        company.email = updatedCompanyDTO.email
+        company.phone = updatedCompanyDTO.phone
+        company.address = updatedCompanyDTO.address
+        company.serviceArea = updatedCompanyDTO.serviceArea
+        company.servicesOffered = updatedCompanyDTO.servicesOffered
+        company.languagesSpoken = updatedCompanyDTO.languagesSpoken
+        company.rating = updatedCompanyDTO.rating
+        
+        try await company.save(on: req.db)
+        return CompanyDTO(company: company)
     }
 
-    func delete(req: Request) throws -> EventLoopFuture<HTTPStatus> {
-        return Company.find(req.parameters.get("companyID"), on: req.db)
-            .unwrap(or: Abort(.notFound))
-            .flatMap { company in
-                company.delete(on: req.db).transform(to: .noContent)
-            }
+    func delete(req: Request) async throws -> HTTPStatus {
+        guard let company = try await Company.find(
+            req.parameters.get("companyID"),
+            on: req.db
+        ) else {
+            throw Abort(.notFound)
+        }
+        
+        try await company.delete(on: req.db)
+        return .noContent
+    }
+
+    func topRated(req: Request) async throws -> [CompanyDTO] {
+        let limit = req.query[Int.self, at: "limit"] ?? 10
+        
+        let companies = try await Company.query(on: req.db)
+            .sort(\.$rating, .descending)
+            .limit(limit)
+            .all()
+        
+        return companies.map { CompanyDTO(company: $0) }
+    }
+
+    func byServiceArea(req: Request) async throws -> [CompanyDTO] {
+        guard let area = req.parameters.get("area") else {
+            throw Abort(.badRequest)
+        }
+        
+        let companies = try await Company.query(on: req.db)
+            .filter(\.$serviceArea == area)
+            .all()
+        
+        return companies.map { CompanyDTO(company: $0) }
     }
 }

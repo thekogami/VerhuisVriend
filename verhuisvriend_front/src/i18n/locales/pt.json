@@ -1,0 +1,170 @@
+{
+  "nav": {
+    "home": "Início",
+    "neighborhoods": "Bairros",
+    "companies": "Empresas",
+    "planMove": "Planejar Mudança",
+    "signIn": "Entrar",
+    "dashboard": "Painel",
+    "logout": "Sair"
+  },
+  "home": {
+    "hero": {
+      "title": "Mudar-se ficou simples.",
+      "subtitle": "Encontre seu bairro perfeito e empresa de mudanças na Holanda"
+    },
+    "stats": {
+      "cities": "Principais Cidades Estudantis",
+      "companies": "Empresas Verificadas",
+      "from": "A partir de /mês"
+    },
+    "neighborhoods": {
+      "title": "Melhores Bairros para Estudantes",
+      "viewAll": "Ver Todos os Bairros"
+    },
+    "companies": {
+      "title": "Empresas de Mudança em Destaque",
+      "viewAll": "Ver Todas as Empresas"
+    },
+    "features": {
+      "title": "Tudo Que Você Precisa",
+      "subtitle": "Uma plataforma completa para organizar sua mudança",
+      "maps": {
+        "title": "Mapas Interativos",
+        "description": "Explore bairros com mapas detalhados mostrando universidades, transporte e comodidades"
+      },
+      "companies": {
+        "title": "Empresas Confiáveis",
+        "description": "Conecte-se com empresas de mudança verificadas e avaliadas por estudantes como você"
+      },
+      "planning": {
+        "title": "Planejamento Inteligente",
+        "description": "Organize tarefas, defina prioridades e acompanhe o progresso da sua mudança facilmente"
+      },
+      "budget": {
+        "title": "Amigável ao Orçamento",
+        "description": "Filtre bairros por preços de aluguel e encontre opções dentro do seu orçamento"
+      },
+      "multilingual": {
+        "title": "Multilíngue",
+        "description": "Disponível em vários idiomas para ajudar estudantes internacionais"
+      },
+      "free": {
+        "title": "Grátis Para Sempre",
+        "description": "Todos os recursos completamente gratuitos para estudantes que se mudam para a Holanda"
+      }
+    },
+    "cta": {
+      "title": "Pronto para começar sua jornada?",
+      "subtitle": "Junte-se a milhares de estudantes que fizeram sua mudança sem estresse com o VerhuisVriend",
+      "button": "Planejar Minha Mudança Agora"
+    }
+  },
+  "neighborhoods": {
+    "title": "Encontre Seu Bairro Perfeito",
+    "subtitle": "Explore áreas ideais para estudantes em toda a Holanda",
+    "filters": {
+      "city": "Cidade",
+      "allCities": "Todas as Cidades",
+      "maxRent": "Aluguel Máx (€/mês)",
+      "clearFilters": "Limpar Filtros"
+    },
+    "stats": {
+      "studentRating": "Avaliação dos Estudantes",
+      "averageRent": "/mês",
+      "distance": "km"
+    },
+    "empty": "Nenhum bairro encontrado com seus critérios"
+  },
+  "neighborhoodDetail": {
+    "back": "Voltar",
+    "location": "Localização",
+    "locationDetails": "Detalhes da Localização",
+    "housing": "Moradia",
+    "studentRating": "Avaliação dos Estudantes",
+    "universityDistance": "Distância da Universidade",
+    "coordinates": "Coordenadas",
+    "averageRent": "Aluguel Médio",
+    "basedOnReviews": "Baseado em avaliações de estudantes",
+    "pricing": "Informações de Preço",
+    "priceRange": "Faixa de Preço",
+    "amenities": "Comodidades Próximas",
+    "loading": "Carregando bairro...",
+    "backToList": "Voltar aos Bairros"
+  },
+  "companies": {
+    "title": "Empresas de Mudança",
+    "subtitle": "Encontre serviços de mudança confiáveis em toda a Holanda",
+    "serviceArea": "Área de Serviço",
+    "contact": "Contato",
+    "phone": "Telefone",
+    "email": "E-mail",
+    "services": "Serviços Oferecidos",
+    "languages": "Idiomas Falados",
+    "empty": "Nenhuma empresa encontrada"
+  },
+  "auth": {
+    "welcome": "Bem-vindo de Volta",
+    "createAccount": "Criar Conta",
+    "email": "E-mail",
+    "password": "Senha",
+    "name": "Nome Completo",
+    "signIn": "Entrar",
+    "register": "Registrar",
+    "noAccount": "Não tem uma conta?",
+    "hasAccount": "Já tem uma conta?",
+    "signInLink": "Entrar",
+    "registerLink": "Criar uma"
+  },
+  "dashboard": {
+    "welcome": "Bem-vindo de volta",
+    "stats": {
+      "totalNotes": "Total de Notas",
+      "activeTasks": "Tarefas Ativas",
+      "upcomingReminders": "Próximos Lembretes"
+    },
+    "notes": {
+      "title": "Suas Notas",
+      "add": "Adicionar Nota",
+      "edit": "Editar Nota",
+      "save": "Salvar Nota",
+      "cancel": "Cancelar",
+      "noteTitle": "Título da Nota",
+      "content": "Conteúdo",
+      "category": "Categoria",
+      "categories": {
+        "general": "Geral",
+        "task": "Tarefa",
+        "reminder": "Lembrete",
+        "checklist": "Lista de Verificação"
+      }
+    }
+  },
+  "common": {
+    "loading": "Carregando...",
+    "tryAgain": "Tentar Novamente",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "perMonth": "por mês",
+    "month": "/mês",
+    "monthShort": "/mês",
+    "km": "km"
+  },
+  "footer": {
+    "tagline": "Mudar-se ficou simples.",
+    "product": "PRODUTO",
+    "resources": "RECURSOS",
+    "company": "EMPRESA",
+    "neighborhoods": "Bairros",
+    "companies": "Empresas",
+    "planMove": "Planejar Mudança",
+    "github": "GitHub",
+    "documentation": "Documentação",
+    "api": "API",
+    "about": "Sobre",
+    "contact": "Contato",
+    "privacy": "Privacidade",
+    "copyright": "Feito com ❤️ para estudantes na Holanda."
+  }
+}

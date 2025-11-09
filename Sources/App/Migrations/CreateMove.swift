@@ -7,18 +7,21 @@
 
 import Fluent
 
-struct CreateMove: Migration {
-    func prepare(on database: Database) -> EventLoopFuture<Void> {
-        return database.schema("moves")
+struct CreateMove: AsyncMigration {
+    func prepare(on database: Database) async throws {
+        try await database.schema("moves")
             .id()
-            .field("move_date", .date, .required)
-            .field("from_location", .string, .required)
-            .field("to_location", .string, .required)
+            .field("moveDate", .date, .required)
+            .field("fromLocation", .string, .required)
+            .field("toLocation", .string, .required)
             .field("user_id", .uuid, .required, .references("users", "id"))
+            .field("status", .string)
+            .field("created_at", .datetime)
+            .field("updated_at", .datetime)
             .create()
     }
 
-    func revert(on database: Database) -> EventLoopFuture<Void> {
-        return database.schema("moves").delete() 
+    func revert(on database: Database) async throws {
+        try await database.schema("moves").delete() 
     }
 }

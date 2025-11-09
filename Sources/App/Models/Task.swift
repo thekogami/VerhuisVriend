@@ -8,7 +8,7 @@
 import Vapor
 import Fluent
 
-final class Task: Model, Content {
+final class Task: Model, Content, @unchecked Sendable {
     static let schema = "tasks"
 
     @ID(key: .id)
@@ -23,16 +23,30 @@ final class Task: Model, Content {
     @Field(key: "is_completed")
     var isCompleted: Bool
 
+    @Field(key: "due_date")
+    var dueDate: Date?
+
+    @Field(key: "priority")
+    var priority: String? // low, medium, high
+
     @Parent(key: "user_id")
-    var user: User // Assumindo que uma tarefa pertence a um usuário
+    var user: User
+
+    @Timestamp(key: "created_at", on: .create)
+    var createdAt: Date?
+
+    @Timestamp(key: "updated_at", on: .update)
+    var updatedAt: Date?
 
     init() { }
 
-    init(id: UUID? = nil, title: String, description: String? = nil, isCompleted: Bool = false, userId: UUID) {
+    init(id: UUID? = nil, title: String, description: String? = nil, isCompleted: Bool = false, userId: UUID, dueDate: Date? = nil, priority: String? = "medium") {
         self.id = id
         self.title = title
         self.description = description
         self.isCompleted = isCompleted
         self.$user.id = userId
+        self.dueDate = dueDate
+        self.priority = priority
     }
 }

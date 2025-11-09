@@ -1,0 +1,170 @@
+{
+  "nav": {
+    "home": "Home",
+    "neighborhoods": "Buurten",
+    "companies": "Bedrijven",
+    "planMove": "Plan Verhuizing",
+    "signIn": "Inloggen",
+    "dashboard": "Dashboard",
+    "logout": "Uitloggen"
+  },
+  "home": {
+    "hero": {
+      "title": "Verhuizen eenvoudig gemaakt.",
+      "subtitle": "Vind jouw perfecte buurt en verhuisbedrijf in Nederland"
+    },
+    "stats": {
+      "cities": "Top Studentensteden",
+      "companies": "Geverifieerde Bedrijven",
+      "from": "Vanaf /maand"
+    },
+    "neighborhoods": {
+      "title": "Top Studentenbuurten",
+      "viewAll": "Bekijk Alle Buurten"
+    },
+    "companies": {
+      "title": "Aanbevolen Verhuisbedrijven",
+      "viewAll": "Bekijk Alle Bedrijven"
+    },
+    "features": {
+      "title": "Alles Wat Je Nodig Hebt",
+      "subtitle": "Een compleet platform om je verhuizing te organiseren",
+      "maps": {
+        "title": "Interactieve Kaarten",
+        "description": "Verken buurten met gedetailleerde kaarten met universiteiten, vervoer en voorzieningen"
+      },
+      "companies": {
+        "title": "Vertrouwde Bedrijven",
+        "description": "Maak contact met geverifieerde verhuisbedrijven beoordeeld door studenten zoals jij"
+      },
+      "planning": {
+        "title": "Slimme Planning",
+        "description": "Organiseer taken, stel prioriteiten en volg je verhuisvoortgang moeiteloos"
+      },
+      "budget": {
+        "title": "Budgetvriendelijk",
+        "description": "Filter buurten op huurprijzen en vind opties binnen je budget"
+      },
+      "multilingual": {
+        "title": "Meertalig",
+        "description": "Beschikbaar in meerdere talen om internationale studenten te helpen"
+      },
+      "free": {
+        "title": "Altijd Gratis",
+        "description": "Alle functies volledig gratis voor studenten die naar Nederland verhuizen"
+      }
+    },
+    "cta": {
+      "title": "Klaar om je reis te beginnen?",
+      "subtitle": "Sluit je aan bij duizenden studenten die hun verhuizing stressvrij hebben gemaakt met VerhuisVriend",
+      "button": "Plan Nu Je Verhuizing"
+    }
+  },
+  "neighborhoods": {
+    "title": "Vind Je Perfecte Buurt",
+    "subtitle": "Ontdek studentvriendelijke gebieden in heel Nederland",
+    "filters": {
+      "city": "Stad",
+      "allCities": "Alle Steden",
+      "maxRent": "Max Huur (€/maand)",
+      "clearFilters": "Filters Wissen"
+    },
+    "stats": {
+      "studentRating": "Studentenwaardering",
+      "averageRent": "/mnd",
+      "distance": "km"
+    },
+    "empty": "Geen buurten gevonden die aan je criteria voldoen"
+  },
+  "neighborhoodDetail": {
+    "back": "Terug",
+    "location": "Locatie",
+    "locationDetails": "Locatiegegevens",
+    "housing": "Huisvesting",
+    "studentRating": "Studentenbeoordeling",
+    "universityDistance": "Universiteitsafstand",
+    "coordinates": "Coördinaten",
+    "averageRent": "Gemiddelde Huur",
+    "basedOnReviews": "Gebaseerd op studentenreviews",
+    "pricing": "Prijsinformatie",
+    "priceRange": "Prijsklasse",
+    "amenities": "Nabijgelegen Voorzieningen",
+    "loading": "Buurt laden...",
+    "backToList": "Terug naar Buurten"
+  },
+  "companies": {
+    "title": "Verhuisbedrijven",
+    "subtitle": "Vind betrouwbare verhuisdiensten in heel Nederland",
+    "serviceArea": "Servicegebied",
+    "contact": "Contact",
+    "phone": "Telefoon",
+    "email": "E-mail",
+    "services": "Aangeboden Diensten",
+    "languages": "Gesproken Talen",
+    "empty": "Geen bedrijven gevonden"
+  },
+  "auth": {
+    "welcome": "Welkom Terug",
+    "createAccount": "Account Aanmaken",
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "name": "Volledige Naam",
+    "signIn": "Inloggen",
+    "register": "Registreren",
+    "noAccount": "Heb je geen account?",
+    "hasAccount": "Heb je al een account?",
+    "signInLink": "Inloggen",
+    "registerLink": "Maak er een"
+  },
+  "dashboard": {
+    "welcome": "Welkom terug",
+    "stats": {
+      "totalNotes": "Totaal Notities",
+      "activeTasks": "Actieve Taken",
+      "upcomingReminders": "Aankomende Herinneringen"
+    },
+    "notes": {
+      "title": "Je Notities",
+      "add": "Notitie Toevoegen",
+      "edit": "Notitie Bewerken",
+      "save": "Notitie Opslaan",
+      "cancel": "Annuleren",
+      "noteTitle": "Notitietitel",
+      "content": "Inhoud",
+      "category": "Categorie",
+      "categories": {
+        "general": "Algemeen",
+        "task": "Taak",
+        "reminder": "Herinnering",
+        "checklist": "Checklist"
+      }
+    }
+  },
+  "common": {
+    "loading": "Laden...",
+    "tryAgain": "Probeer Opnieuw",
+    "search": "Zoeken",
+    "filter": "Filter",
+    "sort": "Sorteren",
+    "perMonth": "per maand",
+    "month": "/maand",
+    "monthShort": "/mnd",
+    "km": "km"
+  },
+  "footer": {
+    "tagline": "Verhuizen eenvoudig gemaakt.",
+    "product": "PRODUCT",
+    "resources": "BRONNEN",
+    "company": "BEDRIJF",
+    "neighborhoods": "Buurten",
+    "companies": "Bedrijven",
+    "planMove": "Plan Verhuizing",
+    "github": "GitHub",
+    "documentation": "Documentatie",
+    "api": "API",
+    "about": "Over Ons",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "copyright": "Gemaakt met ❤️ voor studenten in Nederland."
+  }
+}

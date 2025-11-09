@@ -22,6 +22,11 @@ public func configure(_ app: Application) async throws {
     app.migrations.add(CreateTask())
     app.migrations.add(CreateMove())
     app.migrations.add(CreateCompany())
+    app.migrations.add(CreateNeighborhood())
+    app.migrations.add(UpdateUserPasswordField())
+    app.migrations.add(CreateUserToken())
+    app.migrations.add(CreateNote())
+    
     // register routes
     try routes(app)
 }

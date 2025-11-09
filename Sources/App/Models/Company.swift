@@ -1,7 +1,7 @@
 import Vapor
 import Fluent
 
-final class Company: Model, Content {
+final class Company: Model, Content, @unchecked Sendable {
     static let schema = "companies"
 
     @ID(key: .id)
@@ -28,9 +28,18 @@ final class Company: Model, Content {
     @Field(key: "languages_spoken")
     var languagesSpoken: String?
 
+    @Field(key: "rating")
+    var rating: Double?
+
+    @Timestamp(key: "created_at", on: .create)
+    var createdAt: Date?
+
+    @Timestamp(key: "updated_at", on: .update)
+    var updatedAt: Date?
+
     init() { }
 
-    init(id: UUID? = nil, name: String, email: String? = nil, phone: String? = nil, address: String? = nil, serviceArea: String? = nil, servicesOffered: String? = nil, languagesSpoken: String? = nil) {
+    init(id: UUID? = nil, name: String, email: String? = nil, phone: String? = nil, address: String? = nil, serviceArea: String? = nil, servicesOffered: String? = nil, languagesSpoken: String? = nil, rating: Double? = nil) {
         self.id = id
         self.name = name
         self.email = email
@@ -39,5 +48,6 @@ final class Company: Model, Content {
         self.serviceArea = serviceArea
         self.servicesOffered = servicesOffered
         self.languagesSpoken = languagesSpoken
+        self.rating = rating
     }
 }

@@ -13,6 +13,9 @@ func routes(_ app: Application) throws {
     }
 
     // Registrando os controladores
+    let authController = AuthController()
+    try app.register(collection: authController)
+    
     let userController = UserController()
     try app.register(collection: userController)
 
@@ -24,4 +27,10 @@ func routes(_ app: Application) throws {
 
     let companyController = CompanyController()
     try app.register(collection: companyController)
+
+    let neighborhoodController = NeighborhoodController()
+    try app.register(collection: neighborhoodController)
+    
+    let noteController = NoteController()
+    try app.register(collection: noteController)
 }

@@ -1,0 +1,170 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "neighborhoods": "Quartiers",
+    "companies": "Entreprises",
+    "planMove": "Planifier Déménagement",
+    "signIn": "Se Connecter",
+    "dashboard": "Tableau de Bord",
+    "logout": "Se Déconnecter"
+  },
+  "home": {
+    "hero": {
+      "title": "Déménager en toute simplicité.",
+      "subtitle": "Trouvez votre quartier parfait et votre entreprise de déménagement aux Pays-Bas"
+    },
+    "stats": {
+      "cities": "Meilleures Villes Étudiantes",
+      "companies": "Entreprises Vérifiées",
+      "from": "À partir de /mois"
+    },
+    "neighborhoods": {
+      "title": "Meilleurs Quartiers Étudiants",
+      "viewAll": "Voir Tous les Quartiers"
+    },
+    "companies": {
+      "title": "Entreprises de Déménagement Recommandées",
+      "viewAll": "Voir Toutes les Entreprises"
+    },
+    "features": {
+      "title": "Tout Ce Dont Vous Avez Besoin",
+      "subtitle": "Une plateforme complète pour organiser votre déménagement",
+      "maps": {
+        "title": "Cartes Interactives",
+        "description": "Explorez les quartiers avec des cartes détaillées montrant les universités, les transports et les commodités"
+      },
+      "companies": {
+        "title": "Entreprises Fiables",
+        "description": "Connectez-vous avec des entreprises de déménagement vérifiées et évaluées par des étudiants comme vous"
+      },
+      "planning": {
+        "title": "Planification Intelligente",
+        "description": "Organisez les tâches, définissez les priorités et suivez l'avancement de votre déménagement sans effort"
+      },
+      "budget": {
+        "title": "Économique",
+        "description": "Filtrez les quartiers par prix de loyer et trouvez des options dans votre budget"
+      },
+      "multilingual": {
+        "title": "Multilingue",
+        "description": "Disponible en plusieurs langues pour aider les étudiants internationaux"
+      },
+      "free": {
+        "title": "Gratuit Pour Toujours",
+        "description": "Toutes les fonctionnalités entièrement gratuites pour les étudiants déménageant aux Pays-Bas"
+      }
+    },
+    "cta": {
+      "title": "Prêt à commencer votre voyage?",
+      "subtitle": "Rejoignez des milliers d'étudiants qui ont fait leur déménagement sans stress avec VerhuisVriend",
+      "button": "Planifier Mon Déménagement Maintenant"
+    }
+  },
+  "neighborhoods": {
+    "title": "Trouvez Votre Quartier Parfait",
+    "subtitle": "Explorez les zones adaptées aux étudiants aux Pays-Bas",
+    "filters": {
+      "city": "Ville",
+      "allCities": "Toutes les Villes",
+      "maxRent": "Loyer Max (€/mois)",
+      "clearFilters": "Effacer les Filtres"
+    },
+    "stats": {
+      "studentRating": "Évaluation Étudiante",
+      "averageRent": "/mois",
+      "distance": "km"
+    },
+    "empty": "Aucun quartier trouvé correspondant à vos critères"
+  },
+  "neighborhoodDetail": {
+    "back": "Retour",
+    "location": "Emplacement",
+    "locationDetails": "Détails de l'Emplacement",
+    "housing": "Logement",
+    "studentRating": "Évaluation Étudiante",
+    "universityDistance": "Distance de l'Université",
+    "coordinates": "Coordonnées",
+    "averageRent": "Loyer Moyen",
+    "basedOnReviews": "Basé sur les avis d'étudiants",
+    "pricing": "Informations sur les Prix",
+    "priceRange": "Gamme de Prix",
+    "amenities": "Commodités à Proximité",
+    "loading": "Chargement du quartier...",
+    "backToList": "Retour aux Quartiers"
+  },
+  "companies": {
+    "title": "Entreprises de Déménagement",
+    "subtitle": "Trouvez des services de déménagement fiables aux Pays-Bas",
+    "serviceArea": "Zone de Service",
+    "contact": "Contact",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "services": "Services Proposés",
+    "languages": "Langues Parlées",
+    "empty": "Aucune entreprise trouvée"
+  },
+  "auth": {
+    "welcome": "Bon Retour",
+    "createAccount": "Créer un Compte",
+    "email": "E-mail",
+    "password": "Mot de Passe",
+    "name": "Nom Complet",
+    "signIn": "Se Connecter",
+    "register": "S'Inscrire",
+    "noAccount": "Vous n'avez pas de compte?",
+    "hasAccount": "Vous avez déjà un compte?",
+    "signInLink": "Se connecter",
+    "registerLink": "Créez-en un"
+  },
+  "dashboard": {
+    "welcome": "Bon retour",
+    "stats": {
+      "totalNotes": "Total des Notes",
+      "activeTasks": "Tâches Actives",
+      "upcomingReminders": "Rappels à Venir"
+    },
+    "notes": {
+      "title": "Vos Notes",
+      "add": "Ajouter une Note",
+      "edit": "Modifier la Note",
+      "save": "Enregistrer la Note",
+      "cancel": "Annuler",
+      "noteTitle": "Titre de la Note",
+      "content": "Contenu",
+      "category": "Catégorie",
+      "categories": {
+        "general": "Général",
+        "task": "Tâche",
+        "reminder": "Rappel",
+        "checklist": "Liste de Contrôle"
+      }
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "tryAgain": "Réessayer",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "perMonth": "par mois",
+    "month": "/mois",
+    "monthShort": "/mois",
+    "km": "km"
+  },
+  "footer": {
+    "tagline": "Déménager en toute simplicité.",
+    "product": "PRODUIT",
+    "resources": "RESSOURCES",
+    "company": "ENTREPRISE",
+    "neighborhoods": "Quartiers",
+    "companies": "Entreprises",
+    "planMove": "Planifier Déménagement",
+    "github": "GitHub",
+    "documentation": "Documentation",
+    "api": "API",
+    "about": "À Propos",
+    "contact": "Contact",
+    "privacy": "Confidentialité",
+    "copyright": "Fait avec ❤️ pour les étudiants aux Pays-Bas."
+  }
+}

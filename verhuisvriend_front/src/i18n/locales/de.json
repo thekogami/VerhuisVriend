@@ -1,0 +1,170 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "neighborhoods": "Stadtteile",
+    "companies": "Unternehmen",
+    "planMove": "Umzug Planen",
+    "signIn": "Anmelden",
+    "dashboard": "Dashboard",
+    "logout": "Abmelden"
+  },
+  "home": {
+    "hero": {
+      "title": "Umziehen leicht gemacht.",
+      "subtitle": "Finden Sie Ihr perfektes Viertel und Umzugsunternehmen in den Niederlanden"
+    },
+    "stats": {
+      "cities": "Top Studentenstädte",
+      "companies": "Verifizierte Unternehmen",
+      "from": "Ab /Monat"
+    },
+    "neighborhoods": {
+      "title": "Top Studentenviertel",
+      "viewAll": "Alle Viertel Anzeigen"
+    },
+    "companies": {
+      "title": "Empfohlene Umzugsunternehmen",
+      "viewAll": "Alle Unternehmen Anzeigen"
+    },
+    "features": {
+      "title": "Alles Was Sie Brauchen",
+      "subtitle": "Eine vollständige Plattform zur Organisation Ihres Umzugs",
+      "maps": {
+        "title": "Interaktive Karten",
+        "description": "Erkunden Sie Stadtteile mit detaillierten Karten mit Universitäten, Verkehr und Einrichtungen"
+      },
+      "companies": {
+        "title": "Vertrauenswürdige Unternehmen",
+        "description": "Verbinden Sie sich mit verifizierten Umzugsunternehmen, die von Studenten wie Ihnen bewertet wurden"
+      },
+      "planning": {
+        "title": "Intelligente Planung",
+        "description": "Organisieren Sie Aufgaben, setzen Sie Prioritäten und verfolgen Sie Ihren Umzugsfortschritt mühelos"
+      },
+      "budget": {
+        "title": "Budgetfreundlich",
+        "description": "Filtern Sie Stadtteile nach Mietpreisen und finden Sie Optionen innerhalb Ihres Budgets"
+      },
+      "multilingual": {
+        "title": "Mehrsprachig",
+        "description": "Verfügbar in mehreren Sprachen, um internationalen Studenten zu helfen"
+      },
+      "free": {
+        "title": "Für Immer Kostenlos",
+        "description": "Alle Funktionen völlig kostenlos für Studenten, die in die Niederlande umziehen"
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihre Reise zu beginnen?",
+      "subtitle": "Schließen Sie sich Tausenden von Studenten an, die ihren Umzug stressfrei mit VerhuisVriend gemacht haben",
+      "button": "Jetzt Meinen Umzug Planen"
+    }
+  },
+  "neighborhoods": {
+    "title": "Finden Sie Ihr Perfektes Viertel",
+    "subtitle": "Entdecken Sie studentenfreundliche Gebiete in den Niederlanden",
+    "filters": {
+      "city": "Stadt",
+      "allCities": "Alle Städte",
+      "maxRent": "Max Miete (€/Monat)",
+      "clearFilters": "Filter Löschen"
+    },
+    "stats": {
+      "studentRating": "Studentenbewertung",
+      "averageRent": "/Mon",
+      "distance": "km"
+    },
+    "empty": "Keine Stadtteile gefunden, die Ihren Kriterien entsprechen"
+  },
+  "neighborhoodDetail": {
+    "back": "Zurück",
+    "location": "Standort",
+    "locationDetails": "Standortdetails",
+    "housing": "Unterkunft",
+    "studentRating": "Studentenbewertung",
+    "universityDistance": "Universitätsentfernung",
+    "coordinates": "Koordinaten",
+    "averageRent": "Durchschnittsmiete",
+    "basedOnReviews": "Basierend auf Studentenbewertungen",
+    "pricing": "Preisinformationen",
+    "priceRange": "Preisspanne",
+    "amenities": "Annehmlichkeiten in der Nähe",
+    "loading": "Viertel wird geladen...",
+    "backToList": "Zurück zu Vierteln"
+  },
+  "companies": {
+    "title": "Umzugsunternehmen",
+    "subtitle": "Finden Sie zuverlässige Umzugsdienste in den Niederlanden",
+    "serviceArea": "Servicebereich",
+    "contact": "Kontakt",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "services": "Angebotene Dienstleistungen",
+    "languages": "Gesprochene Sprachen",
+    "empty": "Keine Unternehmen gefunden"
+  },
+  "auth": {
+    "welcome": "Willkommen Zurück",
+    "createAccount": "Konto Erstellen",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "name": "Vollständiger Name",
+    "signIn": "Anmelden",
+    "register": "Registrieren",
+    "noAccount": "Sie haben noch kein Konto?",
+    "hasAccount": "Sie haben bereits ein Konto?",
+    "signInLink": "Anmelden",
+    "registerLink": "Erstellen Sie eines"
+  },
+  "dashboard": {
+    "welcome": "Willkommen zurück",
+    "stats": {
+      "totalNotes": "Notizen Gesamt",
+      "activeTasks": "Aktive Aufgaben",
+      "upcomingReminders": "Bevorstehende Erinnerungen"
+    },
+    "notes": {
+      "title": "Ihre Notizen",
+      "add": "Notiz Hinzufügen",
+      "edit": "Notiz Bearbeiten",
+      "save": "Notiz Speichern",
+      "cancel": "Abbrechen",
+      "noteTitle": "Notiztitel",
+      "content": "Inhalt",
+      "category": "Kategorie",
+      "categories": {
+        "general": "Allgemein",
+        "task": "Aufgabe",
+        "reminder": "Erinnerung",
+        "checklist": "Checkliste"
+      }
+    }
+  },
+  "common": {
+    "loading": "Laden...",
+    "tryAgain": "Erneut Versuchen",
+    "search": "Suchen",
+    "filter": "Filtern",
+    "sort": "Sortieren",
+    "perMonth": "pro Monat",
+    "month": "/Monat",
+    "monthShort": "/Mon",
+    "km": "km"
+  },
+  "footer": {
+    "tagline": "Umziehen leicht gemacht.",
+    "product": "PRODUKT",
+    "resources": "RESSOURCEN",
+    "company": "UNTERNEHMEN",
+    "neighborhoods": "Stadtteile",
+    "companies": "Unternehmen",
+    "planMove": "Umzug Planen",
+    "github": "GitHub",
+    "documentation": "Dokumentation",
+    "api": "API",
+    "about": "Über Uns",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "copyright": "Mit ❤️ für Studenten in den Niederlanden gemacht."
+  }
+}

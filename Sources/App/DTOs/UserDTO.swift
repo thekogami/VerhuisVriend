@@ -4,7 +4,6 @@ struct UserDTO: Content {
     let id: UUID?
     let name: String
     let email: String
-    let password: String
     let status: Bool
     let avatar: String?
     let phone: String?
@@ -16,7 +15,6 @@ struct UserDTO: Content {
         self.id = user.id
         self.name = user.name
         self.email = user.email
-        self.password = user.password
         self.status = user.status
         self.avatar = user.avatar
         self.phone = user.phone
@@ -25,11 +23,10 @@ struct UserDTO: Content {
     }
 
     // Inicializador para criar um UserDTO a partir de dados recebidos
-    init(name: String, email: String, password: String, status: Bool = true, avatar: String? = nil, phone: String? = nil) {
+    init(name: String, email: String, status: Bool = true, avatar: String? = nil, phone: String? = nil) {
         self.id = nil
         self.name = name
         self.email = email
-        self.password = password
         self.status = status
         self.avatar = avatar
         self.phone = phone

@@ -1,0 +1,170 @@
+{
+  "nav": {
+    "home": "Home",
+    "neighborhoods": "Neighborhoods",
+    "companies": "Companies",
+    "planMove": "Plan Move",
+    "signIn": "Sign In",
+    "dashboard": "Dashboard",
+    "logout": "Logout"
+  },
+  "home": {
+    "hero": {
+      "title": "Moving made simple.",
+      "subtitle": "Find your perfect neighborhood and moving company in the Netherlands"
+    },
+    "stats": {
+      "cities": "Top Student Cities",
+      "companies": "Verified Companies",
+      "from": "From /month"
+    },
+    "neighborhoods": {
+      "title": "Top Student Neighborhoods",
+      "viewAll": "View All Neighborhoods"
+    },
+    "companies": {
+      "title": "Featured Moving Companies",
+      "viewAll": "View All Companies"
+    },
+    "features": {
+      "title": "Everything You Need",
+      "subtitle": "A complete platform to organize your move",
+      "maps": {
+        "title": "Interactive Maps",
+        "description": "Explore neighborhoods with detailed maps showing universities, transport, and amenities"
+      },
+      "companies": {
+        "title": "Trusted Companies",
+        "description": "Connect with verified moving companies rated by students like you"
+      },
+      "planning": {
+        "title": "Smart Planning",
+        "description": "Organize tasks, set priorities, and track your moving progress effortlessly"
+      },
+      "budget": {
+        "title": "Budget Friendly",
+        "description": "Filter neighborhoods by rent prices and find options within your budget"
+      },
+      "multilingual": {
+        "title": "Multilingual",
+        "description": "Available in multiple languages to help international students"
+      },
+      "free": {
+        "title": "Free Forever",
+        "description": "All features completely free for students moving to the Netherlands"
+      }
+    },
+    "cta": {
+      "title": "Ready to start your journey?",
+      "subtitle": "Join thousands of students who made their move stress-free with VerhuisVriend",
+      "button": "Plan Your Move Now"
+    }
+  },
+  "neighborhoods": {
+    "title": "Find Your Perfect Neighborhood",
+    "subtitle": "Explore student-friendly areas across the Netherlands",
+    "filters": {
+      "city": "City",
+      "allCities": "All Cities",
+      "maxRent": "Max Rent (€/month)",
+      "clearFilters": "Clear Filters"
+    },
+    "stats": {
+      "studentRating": "Student Rating",
+      "averageRent": "/mo",
+      "distance": "km"
+    },
+    "empty": "No neighborhoods found matching your criteria"
+  },
+  "neighborhoodDetail": {
+    "back": "Back",
+    "location": "Location",
+    "locationDetails": "Location Details",
+    "housing": "Housing",
+    "studentRating": "Student Rating",
+    "universityDistance": "University Distance",
+    "coordinates": "Coordinates",
+    "averageRent": "Average Rent",
+    "basedOnReviews": "Based on student reviews",
+    "pricing": "Pricing Information",
+    "priceRange": "Price Range",
+    "amenities": "Nearby Amenities",
+    "loading": "Loading neighborhood...",
+    "backToList": "Back to Neighborhoods"
+  },
+  "companies": {
+    "title": "Moving Companies",
+    "subtitle": "Find reliable moving services across the Netherlands",
+    "serviceArea": "Service Area",
+    "contact": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "services": "Services Offered",
+    "languages": "Languages Spoken",
+    "empty": "No companies found"
+  },
+  "auth": {
+    "welcome": "Welcome Back",
+    "createAccount": "Create Account",
+    "email": "Email",
+    "password": "Password",
+    "name": "Full Name",
+    "signIn": "Sign In",
+    "register": "Register",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signInLink": "Sign in",
+    "registerLink": "Create one"
+  },
+  "dashboard": {
+    "welcome": "Welcome back",
+    "stats": {
+      "totalNotes": "Total Notes",
+      "activeTasks": "Active Tasks",
+      "upcomingReminders": "Upcoming Reminders"
+    },
+    "notes": {
+      "title": "Your Notes",
+      "add": "Add Note",
+      "edit": "Edit Note",
+      "save": "Save Note",
+      "cancel": "Cancel",
+      "noteTitle": "Note Title",
+      "content": "Content",
+      "category": "Category",
+      "categories": {
+        "general": "General",
+        "task": "Task",
+        "reminder": "Reminder",
+        "checklist": "Checklist"
+      }
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "tryAgain": "Try Again",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "perMonth": "per month",
+    "month": "/month",
+    "monthShort": "/mo",
+    "km": "km"
+  },
+  "footer": {
+    "tagline": "Moving made simple.",
+    "product": "PRODUCT",
+    "resources": "RESOURCES",
+    "company": "COMPANY",
+    "neighborhoods": "Neighborhoods",
+    "companies": "Companies",
+    "planMove": "Plan Move",
+    "github": "GitHub",
+    "documentation": "Documentation",
+    "api": "API",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "copyright": "Made with ❤️ for students in the Netherlands."
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "neighborhoods": "Barrios",
+    "companies": "Empresas",
+    "planMove": "Planificar Mudanza",
+    "signIn": "Iniciar Sesión",
+    "dashboard": "Panel",
+    "logout": "Cerrar Sesión"
+  },
+  "home": {
+    "hero": {
+      "title": "Mudarse se hizo simple.",
+      "subtitle": "Encuentra tu barrio perfecto y empresa de mudanzas en los Países Bajos"
+    },
+    "stats": {
+      "cities": "Principales Ciudades Estudiantiles",
+      "companies": "Empresas Verificadas",
+      "from": "Desde /mes"
+    },
+    "neighborhoods": {
+      "title": "Mejores Barrios para Estudiantes",
+      "viewAll": "Ver Todos los Barrios"
+    },
+    "companies": {
+      "title": "Empresas de Mudanza Destacadas",
+      "viewAll": "Ver Todas las Empresas"
+    },
+    "features": {
+      "title": "Todo Lo Que Necesitas",
+      "subtitle": "Una plataforma completa para organizar tu mudanza",
+      "maps": {
+        "title": "Mapas Interactivos",
+        "description": "Explora barrios con mapas detallados mostrando universidades, transporte y servicios"
+      },
+      "companies": {
+        "title": "Empresas Confiables",
+        "description": "Conéctate con empresas de mudanza verificadas y valoradas por estudiantes como tú"
+      },
+      "planning": {
+        "title": "Planificación Inteligente",
+        "description": "Organiza tareas, establece prioridades y sigue el progreso de tu mudanza fácilmente"
+      },
+      "budget": {
+        "title": "Amigable con el Presupuesto",
+        "description": "Filtra barrios por precios de alquiler y encuentra opciones dentro de tu presupuesto"
+      },
+      "multilingual": {
+        "title": "Multilingüe",
+        "description": "Disponible en varios idiomas para ayudar a estudiantes internacionales"
+      },
+      "free": {
+        "title": "Gratis Para Siempre",
+        "description": "Todas las funciones completamente gratis para estudiantes que se mudan a los Países Bajos"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para comenzar tu viaje?",
+      "subtitle": "Únete a miles de estudiantes que hicieron su mudanza sin estrés con VerhuisVriend",
+      "button": "Planificar Mi Mudanza Ahora"
+    }
+  },
+  "neighborhoods": {
+    "title": "Encuentra Tu Barrio Perfecto",
+    "subtitle": "Explora áreas ideales para estudiantes en los Países Bajos",
+    "filters": {
+      "city": "Ciudad",
+      "allCities": "Todas las Ciudades",
+      "maxRent": "Alquiler Máx (€/mes)",
+      "clearFilters": "Limpiar Filtros"
+    },
+    "stats": {
+      "studentRating": "Valoración de Estudiantes",
+      "averageRent": "/mes",
+      "distance": "km"
+    },
+    "empty": "No se encontraron barrios con tus criterios"
+  },
+  "neighborhoodDetail": {
+    "back": "Volver",
+    "location": "Ubicación",
+    "locationDetails": "Detalles de Ubicación",
+    "housing": "Vivienda",
+    "studentRating": "Calificación Estudiantil",
+    "universityDistance": "Distancia a la Universidad",
+    "coordinates": "Coordenadas",
+    "averageRent": "Alquiler Promedio",
+    "basedOnReviews": "Basado en reseñas de estudiantes",
+    "pricing": "Información de Precios",
+    "priceRange": "Rango de Precios",
+    "amenities": "Servicios Cercanos",
+    "loading": "Cargando barrio...",
+    "backToList": "Volver a Barrios"
+  },
+  "companies": {
+    "title": "Empresas de Mudanza",
+    "subtitle": "Encuentra servicios de mudanza confiables en los Países Bajos",
+    "serviceArea": "Área de Servicio",
+    "contact": "Contacto",
+    "phone": "Teléfono",
+    "email": "Correo Electrónico",
+    "services": "Servicios Ofrecidos",
+    "languages": "Idiomas Hablados",
+    "empty": "No se encontraron empresas"
+  },
+  "auth": {
+    "welcome": "Bienvenido de Nuevo",
+    "createAccount": "Crear Cuenta",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "name": "Nombre Completo",
+    "signIn": "Iniciar Sesión",
+    "register": "Registrarse",
+    "noAccount": "¿No tienes una cuenta?",
+    "hasAccount": "¿Ya tienes una cuenta?",
+    "signInLink": "Iniciar sesión",
+    "registerLink": "Crear una"
+  },
+  "dashboard": {
+    "welcome": "Bienvenido de nuevo",
+    "stats": {
+      "totalNotes": "Total de Notas",
+      "activeTasks": "Tareas Activas",
+      "upcomingReminders": "Próximos Recordatorios"
+    },
+    "notes": {
+      "title": "Tus Notas",
+      "add": "Añadir Nota",
+      "edit": "Editar Nota",
+      "save": "Guardar Nota",
+      "cancel": "Cancelar",
+      "noteTitle": "Título de la Nota",
+      "content": "Contenido",
+      "category": "Categoría",
+      "categories": {
+        "general": "General",
+        "task": "Tarea",
+        "reminder": "Recordatorio",
+        "checklist": "Lista de Verificación"
+      }
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "tryAgain": "Intentar de Nuevo",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "sort": "Ordenar",
+    "perMonth": "por mes",
+    "month": "/mes",
+    "monthShort": "/mes",
+    "km": "km"
+  },
+  "footer": {
+    "tagline": "Mudarse hecho simple.",
+    "product": "PRODUCTO",
+    "resources": "RECURSOS",
+    "company": "EMPRESA",
+    "neighborhoods": "Barrios",
+    "companies": "Empresas",
+    "planMove": "Planificar Mudanza",
+    "github": "GitHub",
+    "documentation": "Documentación",
+    "api": "API",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "privacy": "Privacidad",
+    "copyright": "Hecho con ❤️ para estudiantes en los Países Bajos."
+  }
+}
