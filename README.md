@@ -219,7 +219,7 @@ This project is licensed under the MIT License.
 
 ## 👥 Contact
 
-- **Developer**: Felipe
+- **Developer**: Kogami
 - **GitHub**: [@thekogami](https://github.com/thekogami)
 
 ---
